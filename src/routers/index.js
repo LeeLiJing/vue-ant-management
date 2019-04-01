@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Layout from '@/views/Layout'
-import { _import } from '@/utils'
+import { _import } from "@/utils"
 
 Vue.use(Router)
 
@@ -15,7 +15,7 @@ export const constantRouterMap = [
       {
         path: 'home',
         name: 'Home',
-        component: _import('Layout/Home'),
+        component: _import('Home/index'),
         meta: {
           title: '首页',
           icon: 'home'
@@ -25,12 +25,12 @@ export const constantRouterMap = [
   },
   {
     path: '/Login',
-    component: _import('Layout/Login'),
+    component: _import('Common/Login'),
     hidden: true
   },
   {
     path: '/404',
-    component: _import('Layout/404'),
+    component: _import('Common/404'),
     hidden: true
   },
 ]
